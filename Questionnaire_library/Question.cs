@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TriviaApiLibrary;
 
+
 namespace Questionnaire_library
 {
     internal class Question
@@ -23,56 +24,43 @@ namespace Questionnaire_library
         //+Tostring() : string
         //----------------------
 
-
         private List<Answer> possibleAnswers = new List<Answer>();
-        public string text { get; set; }
+
+        public string Text { get; set; }
+
         public string ImageUrl { get; set; }
-        public Question() { } 
-        
+
         public Question(string text)
         {
-            this.text = text;
+            Text = text;
         }
+
         public void AddAnswer(Answer answer)
         {
             possibleAnswers.Add(answer);
         }
+
 
         public Answer GetAnswer(int index)
         {
             return possibleAnswers[index];
         }
 
-        public void RemoveAnswer(int index)
-        {
-
-            possibleAnswers.RemoveAt(index);
-
-        }
-        public void RemoveAnswer(string text) { }
-
         public override string ToString()
         {
-            return text;
-        }
-
-        public void DisplayQuestion()
-        {
-            Console.WriteLine(text);
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(Text);
             for (int i = 0; i < possibleAnswers.Count; i++)
             {
-                Console.WriteLine(i + 1 + ". " + possibleAnswers[i].ToString());
+                sb.AppendLine($"{i + 1}. {possibleAnswers[i].Text}");
             }
-        }
-
-        public bool ValidateAnswer(int index)
-        {
-            return possibleAnswers[index].IsCorrect;
+            return sb.ToString();
         }
 
 
-        
+
 
 
     }
+
 }

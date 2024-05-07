@@ -20,6 +20,8 @@ namespace Questionnaire_library
         //----------------------
         public string text { get; set; }    
         public bool IsCorrect { get; set; }
+        public object Text { get; internal set; }
+
         public Answer() { }
         public Answer(string text, bool IsCorrect)
         {

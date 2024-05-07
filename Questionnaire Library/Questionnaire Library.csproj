@@ -2,12 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Questionnaire_Library</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\TriviaApiLibrary\TriviaApiLibrary.csproj" />
-  </ItemGroup>
 
 </Project>

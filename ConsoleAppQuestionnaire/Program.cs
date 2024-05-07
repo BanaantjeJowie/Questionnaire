@@ -7,7 +7,6 @@
     using System.Text;
     using Questionnaire_library;
     using TriviaApiLibrary;
-    
 
     internal class Program
     {
@@ -23,11 +22,8 @@
             Console.WriteLine("Are you ready? Here we go!");
             System.Threading.Thread.Sleep(2000);
             //call method to display the question
-            
-            DisplayQuestion();
-              
-            
-            
+
+                     
 
 
         }
