@@ -62,7 +62,17 @@
                 Foreground="#331832"
                 Margin="10"
                 />
-        
+        <Grid 
+            
+            >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+            
 
             
 
