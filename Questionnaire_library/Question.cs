@@ -8,7 +8,7 @@ using TriviaApiLibrary;
 
 namespace Questionnaire_library
 {
-    internal class Question
+    public class Question
     {
         //uml diagram
         //----------------------
