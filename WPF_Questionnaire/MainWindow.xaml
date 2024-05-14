@@ -62,6 +62,7 @@
                 Foreground="#331832"
                 Margin="10"
                 />
+
         <Grid 
             
             >
@@ -71,14 +72,14 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
+
         </Grid>
-        
-            
-
-            
 
 
-       
+
+
+
+
 
     </Grid>
 </Window>

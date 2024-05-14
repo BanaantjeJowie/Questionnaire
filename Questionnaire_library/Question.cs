@@ -24,37 +24,28 @@ namespace Questionnaire_library
         //+Tostring() : string
         //----------------------
 
-        private List<Answer> possibleAnswers = new List<Answer>();
-
-        public string Text { get; set; }
-
+        public string text { get; set; }
         public string ImageUrl { get; set; }
+        List<Answer> possibleAnswers = new List<Answer>();
 
         public Question(string text)
         {
-            Text = text;
+            this.text = text;
         }
 
-        public void AddAnswer(Answer answer)
+        void AddAnswer(Answer answer)
         {
             possibleAnswers.Add(answer);
         }
 
-
-        public Answer GetAnswer(int index)
+        Answer GetAnswer(int index)
         {
             return possibleAnswers[index];
         }
 
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine(Text);
-            for (int i = 0; i < possibleAnswers.Count; i++)
-            {
-                sb.AppendLine($"{i + 1}. {possibleAnswers[i].Text}");
-            }
-            return sb.ToString();
+            return text;
         }
 
 
