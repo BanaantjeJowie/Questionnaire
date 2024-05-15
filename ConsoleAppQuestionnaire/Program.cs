@@ -46,15 +46,6 @@
             }
 
             Console.WriteLine("Thank you for playing!");
-
-
-
-
-
-
-
-
-
         }
     }
 }
