@@ -47,11 +47,6 @@ namespace Questionnaire_library
         {
             return text;
         }
-
-
-
-
-
     }
 
 }

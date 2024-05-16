@@ -8,7 +8,8 @@
         Title="MainWindow" 
         Height="600" 
         Width="450" 
-        Background="#CEC2FF">
+        Background="#CEC2FF"
+        >
 
 
     <Grid Name ="maingrid">
@@ -88,13 +89,30 @@
                 Grid.Row="0"
                 Grid.ColumnSpan="6"
                 TextAlignment="Center"
-                Text="What is the capital of France?"
+                Text="Are you ready?"
                 x:Name ="question1"
                 FontSize="15"
                 FontWeight="Bold"
                 Foreground="#331832"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center"/>
+            <Button
+                Grid.Column="4"
+                Grid.Row="0"
+                Grid.ColumnSpan="1"
+                Height="50"
+                x:Name="GObtn"
+                Content="GO!"
+                FontSize="15"
+                FontWeight="Bold"
+                Background="#331832"
+                Foreground="White"
+                BorderThickness="2"
+                BorderBrush="White"
+                Margin="5" 
+                Padding="10"
+                Click="GObtn_Click"
+                />
         </Grid>
 
 
@@ -125,7 +143,7 @@
                 Grid.ColumnSpan="3"
                 Height="50"
                 Name="btnOne"
-                Content="A: Paris"
+                Content=""
                 FontSize="15"
                 FontWeight="Bold"
                 Background="#331832"
@@ -142,7 +160,7 @@
                 Grid.ColumnSpan="3"
                 Height="50"
                 Name="btnTwo"
-                Content="B: Roeselare"
+                Content=""
                 FontSize="15"
                 FontWeight="Bold"
                 Background="#331832"
@@ -159,7 +177,7 @@
                 Grid.ColumnSpan="3"
                 Height="50"
                 Name="btnThree"
-                Content="C: Ardooie"
+                Content=""
                 FontSize="15"
                 FontWeight="Bold"
                 Background="#331832"
@@ -176,7 +194,7 @@
                 Grid.ColumnSpan="3"
                 Height="50"
                 Name="btnFour"
-                Content="D: Beveren"
+                Content=""
                 FontSize="15"
                 FontWeight="Bold"
                 Background="#331832"
@@ -205,6 +223,23 @@
             FontWeight="Bold"
             Foreground="#331832"
             Margin="10"
+            />
+        <Button
+            Grid.Column="4"
+            Grid.Row="4"
+            Grid.ColumnSpan="1"
+            Height="50"
+            Content="Next"
+            Name="btnNext"
+            FontSize="15"
+            FontWeight="Bold"
+            Background="#331832"
+            Foreground="White"
+            BorderThickness="2"
+            BorderBrush="White"
+            Margin="5" 
+            Padding="10"
+            Click="btnNext_Click"
             />
     </Grid>
 </Window>

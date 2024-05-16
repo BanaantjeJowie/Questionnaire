@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TriviaApiLibrary;
+using System.Windows;
+
 
 namespace Questionnaire_library
 {
-    internal class Answer
+    public class Answer
     {
         //uml diagram
         //----------------------
@@ -33,8 +36,5 @@ namespace Questionnaire_library
             return text;
         }
 
-
-
-
-    }
+    } 
 }
