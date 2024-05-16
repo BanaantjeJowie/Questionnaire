@@ -8,6 +8,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Questionnaire_library;
+using TriviaApiLibrary;
 
 namespace WPF_Questionnaire
 {
@@ -19,6 +21,27 @@ namespace WPF_Questionnaire
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnOne_Click(object sender, RoutedEventArgs e)
+        {
+            question1.Text = "hello and welcome to my questionnaire app";
+
+        }
+
+        private void btnTwo_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnThree_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnFour_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -8,4 +8,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\TriviaApiLibrary\TriviaApiLibrary.csproj" />
+    <ProjectReference Include="..\Questionnaire_library\Questionnaire_library.csproj" />
+  </ItemGroup>
+
 </Project>
